@@ -1,6 +1,5 @@
 def main():
-    # from machine import Pin
-    import utime
+    from machine import Pin
   
 ############### atSign ######################
     # read settings.json
@@ -21,9 +20,14 @@ def main():
     del at_client
 ##############################################
 
-    atClient.put_public('deposite', "abcd123")
-     
+    #Follow the same format to send data over to atSign server 
+    # acc2: key
+    # value: a100a550a100001e 
+    # a100a500a:account/action | 100001:random id | e: a char "e"
+    # atClient.put_public('acc2', "a100a550a100001e",namespace='project11')
 
 
+##############################################
+        
 if __name__ == "__main__":
     main()

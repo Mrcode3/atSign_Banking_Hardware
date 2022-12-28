@@ -25,10 +25,11 @@ def main():
     del at_client
 
     for i in range(5000):
-        key = 'led'
-        appAtSign = '@acting29'
-        data = atClient.get_public(key, appAtSign)
-        print(data)
+        key = '' #key in the atSign server
+        appAtSign = '' #atSign key
+        data = atClient.get_public(key, appAtSign,namespace="your_project_name")
+
+        print("Data associated with " + key + " is" + data)
 
 
 if __name__ == '__main__':

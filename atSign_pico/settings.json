@@ -1,0 +1,5 @@
+{
+  "ssid": "", // wifi name
+  "password": "", // wifi password
+  "atSign": "" // atSign key
+}
